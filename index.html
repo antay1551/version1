@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Форма и progressive enhancement</title>
+	   	<meta charset="UTF-8">
+		<link href = "main.css" rel="stylesheet" type="text/css"/>
+	</head>
+    <body>
+        <form class="login" method="post" action="connection_user.php">
+            <label for="login">Логин</label>
+            <input type="text" id="login" name="login" />
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="password" />
+			<a href="registration.html">Registration</a>
+            <a href="registration.html"><input type="submit" value="Войти" /></a>
+			<?php  
+				echo "$login";
+			?>
+		</form>
+    </body>
+</html>
